@@ -1,7 +1,0 @@
-version: 2
-sources:
-  - name: raw
-    database: cona_tests 
-    schema: raw
-    tables:
-      - name: customer_raw
