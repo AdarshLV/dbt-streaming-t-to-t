@@ -1,0 +1,15 @@
+name: dbt_streaming_project
+profile: databricks
+version: 1.0.0
+
+config-version: 2
+
+flags:
+  use_materialization_v2: true
+
+model-paths: ["models"]
+
+models:
+  dbt_streaming_project:
+    +materialized: streaming_table
+    +use_materialization_v2: true
