@@ -11,5 +11,6 @@ model-paths: ["models"]
 
 models:
   dbt_streaming_project:
-    +materialized: streaming_table
-    +use_materialization_v2: true
+    bronze:
+      +materialized: streaming_table
+      +use_materialization_v2: true
